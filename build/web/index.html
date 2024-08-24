@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Cooperative at IPRC Karongi</title>
+    <style>
+        body, html {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        
+        .sidebar {
+            width: 250px;
+            background-color: #4a90e2; /* Light blue */
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            position: fixed;
+            height: 100%;
+            overflow-y: auto;
+        }
+        
+        .sidebar .logo {
+            font-size: 24px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .sidebar .logo::before {
+            color: #ffd700; /* Gold */
+            margin-right: 10px;
+            font-size: 28px;
+        }
+        
+        .sidebar a {
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;        
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        
+        .sidebar a img {
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            flex: 1;
+        }
+        
+        h1 {
+            color: #4a90e2;
+            text-align: center;
+            font-size: 24px;
+            margin: 0;
+        }
+        
+        .dashboard-header {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .dashboard-header h2 {
+            margin-bottom: 5px;
+        }
+        
+        .dashboard-header p {
+            color: #888;
+            margin-top: 0;
+        }
+        
+        .dashboard-stats {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 300px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .stat-box h3 {
+            margin-top: 0;
+            color: #888;
+            font-weight: normal;
+        }
+        
+        .stat-box .value {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            background-color: #4a90e2; /* Light blue */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                position: static;
+                height: auto;
+                border-radius: 0;
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+
+            .dashboard-stats {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="one.png" alt="KIMINA"> &nbsp;
+                <span>KIMINA</span>
+            </div>
+            <nav>
+                <a href="guest.html"><img src="guestnew.jfif" alt="Guest">GUEST</a>
+                <a href="loginform.jsp"><img src="dashboard.jfif" alt="Dashboard">LOGIN</a>
+                
+                <a href="LogoutServlet"><img src="log out.png" alt="Log out">Log out</a>
+            </nav>
+        </aside>
+        
+        <main class="main-content">
+            <header>
+                <h1>FINANCIAL COOPERATIVE AT IPRC KARONGI</h1>
+            </header>
+            
+            <section class="dashboard">
+                <div class="dashboard-header">
+                    <h2>Dashboard</h2>
+                    <p>Welcome to our KIMINA</p>
+                </div>
+                <div class="dashboard-stats">
+                    <div class="stat-box">
+                        <h3>Revenue</h3>
+                        <div class="value">$2000.5</div>
+                        <img src="5.jfif" alt="User avatar">
+                    </div>
+                    <div class="stat-box">
+                        <h3>Expenses</h3>
+                        <div class="value">$1800.5</div>
+                        <img src="500.jfif" alt="User avatar">
+                    </div>
+                    <div class="stat-box">
+                        <h3>Sales</h3>
+                        <div class="value">5487</div>
+                        <img src="s.jfif" alt="User avatar">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 IKIMINA. All rights reserved.</p>
+    </footer>
+</body>
+</html>
